@@ -1,0 +1,146 @@
+/*register样式*/
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+.header {
+	margin-top: 15px;
+	border-bottom: 2px solid #b1191a;
+}
+.logo {
+	display: block;
+	font-size: 0;
+	width: 177px;
+	height: 61px;
+	background: url(../img/logo.png) no-repeat;
+}
+.body {
+	margin-top: 10px;
+	border: 1px solid #dfdfdf;
+}
+.register {
+	height: 41px;
+	background-color: #ececec
+}
+.register h3 {
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #b1191a;
+	text-align: center;
+	line-height: 41px;
+}
+.register em {
+	float: right;
+	margin-right: 30px;
+	line-height: 41px;
+	text-align: center;
+}
+.register a {
+	font-size: 14px;
+	color: #c81623;
+	margin: 0 5px;
+}
+.regestArea{
+	width: 600px;
+	margin: 40px auto 30px;
+			/* 设置透明边框，解决和li的上边距合并问题 */
+	border-top: 1px solid transparent;
+}
+.regestArea li {
+	margin-top: 10px;
+}
+.regestArea label{
+		/* label为行内元素，不能设置宽高大小 */
+	display: inline-block;
+	padding-right: 5px;
+	width: 100px;
+	height: 36px;
+	text-align: right;
+}
+.regestArea input {
+	width: 238px;
+	height: 34px;
+	padding-left: 10px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+	/* 表单验证提示信息 */
+.regestArea .success {
+	color: #40b83f;
+	margin-left: 10px;
+}
+.regestArea .error {
+	color: #df3033;
+	margin-left: 10px;
+}
+.success .success_icon,
+.error_icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 5px;
+	background: url(../img/success.png);
+}
+.error_icon {
+	background: url(../img/error.png);
+}
+
+.regestArea .safe {
+	padding-left: 150px;
+}
+.safe em {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	text-align: center;
+}
+.safe em:first-child {
+	background-color: #de1111;
+}
+.safe em:nth-child(2) {
+	background-color: #40b83f;
+}
+.safe em:last-child {
+	background-color: #f79100;
+}
+.regestArea .agree {
+	width: 14px;
+	height: 14px;
+	vertical-align: middle;
+	margin-left: 100px;
+}
+.regest {
+	display: inline-block;
+	width: 100px;
+	height: 34px;
+	margin-left: 130px;
+	background: pink;
+	border-style: none;
+}
+
+
+/*footer*/
+.footer {
+	margin-top: 20px;
+	border-top:  1px solid #b1191a;
+}
+.link {
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.link li{
+	float: left;
+}
+.link li a {
+	padding: 0 12px;
+}
+.footer .copyright {
+	margin-top: 10px;
+	text-align: center;
+	line-height: 20px;
+
+}

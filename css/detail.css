@@ -1,0 +1,365 @@
+/*详情页css*/
+
+/*面包屑导航*/
+.crumb_wrap {
+	margin: 15px 0 10px 0;
+}
+.crumb_wrap a{
+	margin: 0 5px;
+}
+/*左侧预览区域*/
+.preview_wrap {
+	width: 400px;
+	height: 590px;
+}
+.preview_img {
+	position: relative;
+	height: 398px;
+			/*给高，不用给宽，方便添加边框*/
+	border: 1px solid #ccc;
+	cursor: move;
+}
+
+
+
+		/* 细节放大图，左侧黄色半透明遮挡层，右侧大图片显示 ,默认状态都是隐藏*/
+		.mask {
+			display: none;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			height: 200px;
+			background: orange;
+			opacity: .3;
+		}
+		.bigImg {
+			display: none;
+			position: absolute;
+			overflow: hidden;
+			top: -25px;
+			left: 430px;
+			width: 600px;
+			height: 600px;
+			background: #fff;
+			border: 1px solid #ccc;
+				/* 大图显示在最上层 */
+			z-index: 99;
+		}
+		.bigImg img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+
+
+
+
+
+.preview_list {
+	position: relative;
+	height: 60px;
+	margin-top: 10px;
+}
+.list_item {
+	width: 320px;
+	height: 60px;
+	margin: 0 auto;
+}
+.list_item li {
+	float: left;
+	width: 56px;
+	height: 56px;
+	border: 2px solid transparent;
+	margin: 0 2px;
+}
+.list_item li.current {
+	border: 2px solid #c81623;
+}
+.arrow_pre,
+.arrow_next {	
+			/*行内元素不可以调大小，浮动、定位---把图片转为块状元素*/
+	position: absolute;
+	top: 15px;
+	width: 22px;
+	height: 32px;
+}
+.arrow_pre {
+	background: url(../img/arrow-prev.png) no-repeat;
+	left: 0;
+}
+.arrow_next {
+	background: url(../img/arrow-next.png) no-repeat;
+	right: 0;
+}
+/*右侧产品详细信息区域*/
+.itemInfo_wrap {
+	width: 718px;
+}
+.sku_name {
+	height: 30px;
+	font-size: 16xp;
+	font-weight: bold;
+}
+.news {
+	height: 30px;
+	color: #e12228;
+}
+.summary dl {
+	overflow: hidden;
+}
+.summary dt,
+.summary dd {
+	float: left;
+}
+.summary dt {
+	width: 60px;
+	padding-left: 10px;
+	line-height: 36px;
+}
+.summary_price,
+.summary_pomotion {
+	position: relative;
+	padding: 10px 0;
+	background-color: #fee9eb;
+}
+.price {
+	font-size: 24px;
+	color: #e12228;
+}
+.summary_price a {
+	color: #c81623;
+}
+.remark {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+}
+.summary_pomotion {
+	padding-top: 0;
+}
+.summary_pomotion dd {
+	width: 450px;
+	line-height: 26px;
+}
+.summary_pomotion em {
+	display: inline-block;
+	width: 40px;
+	height: 22px;
+	background-color: #c81623;
+	text-align: center;
+	line-height: 22px;
+	color: #fff;
+}
+.summary_support dd {
+	line-height: 36px;
+}
+.summary_send dd{
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+.choose_color a{
+	display: inline-block;
+	width: 80px;
+	height: 41px;
+	background-color: #f7f7f7;
+	border: 1px solid #ededed;
+	text-align: center;
+	line-height: 41px;
+}
+.choose_color a.current {
+	border-color: #c81623;
+}
+.choose_version a,
+.choose_type a {
+	display: inline-block;
+	height: 41px;
+	padding: 0 12px;
+	margin: 10px 5px;
+	background-color: #f7f7f7;
+	border: 1px solid #ededed;
+	text-align: center;
+	line-height: 41px;
+}
+.choose_version a.current,
+.choose_type a.current{
+	border-color: #c81623;
+}
+/*确认提交按钮模块*/
+.choose_btns {
+	margin-top: 20px;
+}
+.choose_amount {
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 46px;
+	background-color: pink;
+}
+.choose_amount input {
+	width: 33px;
+	height: 44px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.add,
+.reduce {
+	position: absolute;
+	right: 0;
+	width: 15px;
+	height: 22px;
+	border: 1px solid #f1f1f1;
+	text-align: center;
+	line-height: 22px;
+}
+.add {
+	top: 0;
+}
+.reduce {
+	bottom: 0;
+	cursor: not-allowed;
+}
+.addcar {
+	display: inline-block;
+	width: 142px;
+	height: 46px;
+	background-color: #c81623;
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	color: #fff;
+	margin-left: 10px;
+	font-weight: bold;
+
+}
+
+/*product_detail*/
+.product_detail {
+	margin-bottom: 20px;
+}
+.aside {
+	width: 208px;
+	border: 1px solid #ccc;
+}
+.aside_tab	ul{
+		/*问题：.aside_tab li元素，父盒子装不下，浮动导致first在下面显示
+		.aside_tab 元素overflow: hidden;，导致超出部分被隐藏*/
+	width: 212px;
+}
+.aside_tab {
+	/*多出部分隐藏*/
+	overflow: hidden;
+	height: 34px;
+}
+.aside_tab li {
+	float : left; 
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #ccc;
+	height: 33px;
+	text-align: center;
+	line-height: 33px;
+}
+.aside_tab .first {
+	width: 104px;
+}
+.aside_tab .second {
+	width: 103px;
+	border-left: 1px solid #ccc;
+}
+.aside_tab li.current {
+	border-bottom: 1px solid transparent;
+	background-color: #fff;
+	color: red;
+}
+.tab_list {
+	overflow: hidden;
+	margin: 10px 20px;
+}
+.tab_list li{
+	float: left;
+	border-bottom: 1px dashed #ccc;
+	width: 80px;
+	height: 21px;
+	margin: 2px;
+	text-align: center;
+	line-height: 21px;
+}
+.tab_list .tab_list_border {
+	border-bottom: 5px dashed transparent;
+}
+.tab_list li:hover a{
+	background: red;
+	color: #fff;
+}
+.tab_con .tuijian {
+	margin-top: 20px;
+	font-size: 15px;
+	text-align: center;
+	color: red;
+}
+.tab_con li {
+	margin: 0 auto;
+	margin-top: 10px;
+	width: 180px;
+	height: 225px;
+	border-top: 1px solid #ccc;
+}
+.tab_con li h5 {
+	font-weight: normal;
+	/*超出部分省略号替代*/
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tab_con .aside_price{
+	font-weight: bold;
+	margin: 10px ;
+	text-align: center;
+}
+.aside_addcar {
+	display: block;
+	width: 88px;
+	height: 26px;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+	line-height: 26px;
+	text-align: center;
+	margin: auto;
+
+}
+/*右侧商品信息区域*/
+.detail {
+	width: 978px;
+}
+.detail_tab_list {
+	width: 987px;
+	height: 39px;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+.detail_tab_list li {
+	float: left;
+	height: 39px;
+	padding: 0 20px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 39px;
+	cursor: pointer;
+}
+.detail_tab_list li.current {
+	background-color: #c81623;
+	color: #fff;
+}
+.item {
+	margin: 10px;
+}
+.item li{
+	line-height: 22px;
+}
+.more {
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "icomoon"
+}

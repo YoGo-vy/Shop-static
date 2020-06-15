@@ -1,0 +1,329 @@
+/*首页样式*/
+	/* 单击选中样式 */
+.current {
+	background-color: #fff;
+}
+
+.main {
+	width: 980px;
+	height: 455px;
+	margin-left: 219px;
+	margin-top: 10px;
+}
+.focus {
+	position: relative;
+	width: 720px;
+	height: 455px;
+	overflow: hidden;
+}
+.focus_img {
+	position: relative;
+	width: 13000px;
+}
+.focus_img li {
+		/* 装不下，让父盒子的宽度足够大 */
+	float: left;
+}
+/* .focus ul img {
+	width: 100%;
+	height: 100%;
+} */
+.focus .arrow_l,  
+.focus .arrow_r {
+	position: absolute;
+	display: none;
+	top: 50%;
+	margin-top: -20px;
+	width: 40px;
+	height: 60px;
+	font-size: 50px;
+	line-height: 60px;
+	background-color: rgba(0,0,0,.3);
+	z-index: 3;
+}
+.focus .arrow_l {
+	border-radius: 0 18px 18px 0;
+}
+.focus .arrow_r {
+	right: 0px;
+	border-radius: 18px 0 0 18px;
+}
+.focus .circle {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -68px;
+	z-index: 3;
+
+}
+.focus .circle li{
+	float: left;
+	width: 13px;
+	height: 13px;
+	margin: 0 3px;
+	border: 5px solid rgba(0,0,0,.3);
+	border-radius: 50px;
+	cursor: pointer;
+}
+.focus .circle li:hover {
+	background-color: #fff;
+}
+/*newflash*/
+.newflash {
+	width: 250px;
+	height: 455px;
+}
+.news {
+	height: 163px;
+	border: 1px solid #ccc;
+}
+.new-hd {
+	height: 32px;
+	border-bottom: 1px dotted #ccc;
+	padding: 0 15px;
+	font-size: 16px;
+	line-height: 32px;
+}
+.new-hd a {
+	float: right;
+	font-family: "icomoon";
+}
+.new-bd{
+	padding: 10px 0 0 15px;
+}
+.new-bd {
+	line-height: 23px;
+}
+.lifeservice {
+		/*处理：为让父盒子装下一排小盒子，父盒子超出部分不显示；*/
+	overflow: hidden;
+	height: 208px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.lifeservice ul {
+	width: 255px;
+}
+.lifeservice li {
+	float: left;
+	width: 62px;
+	height: 70px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.lifeservice li a {
+	display: block;
+	width: 100%; 
+	height: 100%;
+}			
+	/*先统一设置icon样式，在分别设置单独position*/
+.lifeservice .service-icon {
+	display: block;
+	width: 24px;
+	height: 24px;
+	margin: 10px auto;
+	background-color: pink;
+	background: url(../img/icons.png) no-repeat; 
+}
+.lifeservice li {
+		/*子绝父相*/
+	position: relative;
+	text-align: center;
+}
+.lifeservice li:hover {
+	background-color: #f1f1f1;
+}
+.lifeservice .hot {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 12px;
+	height: 15px;
+	background: url(../img/hot.jpg) no-repeat;
+
+}
+		/*分别设置background-position属性*/
+.lifeservice .huafei {
+	background-position: -17px -18px;
+}
+.lifeservice .jipiao {
+	background-position: -79px -18px;
+}
+.lifeservice .dianyingpiao {
+	background-position: -142px -18px;
+}
+.lifeservice .youxi {
+	background-position: -205px -18px;
+}
+.lifeservice .caipiao {
+	background-position: -17px -88px;
+}
+.lifeservice .jiayouka {
+	background-position: -79px -88px;
+}
+.lifeservice .jiudian {
+	background-position: -142px -88px;
+}
+.lifeservice .huochepiao {
+	background-position: -205px -88px;
+}
+.lifeservice .zhongchou {
+	background-position: -17px -158px;
+}
+.lifeservice .licai {
+	background-position: -79px -158px;
+}
+.lifeservice .lipinka {
+	background-position: -142px -158px;
+}
+.lifeservice .baitiao {
+	background-position: -205px -158px;
+}
+.bargain {
+	/*子盒子看度默认等于父盒子宽度
+	父盒子高度默认为0---浮动---父盒子高度等于子盒子高度*/
+	height: 75px;
+	margin-top: 5px;
+}
+	/*-----------recommend-----------*/
+.recommend {
+	height: 163px;
+	margin-top: 10px;
+}
+.recommend-hd {
+	width: 200px;
+	height: 163px;
+	line-height: 163px;
+	background-color: #5c5251;
+	text-align: center;
+}
+.recommend-hd h3 {
+	color: #fff;
+	font-weight: normal;
+}
+.recommend-d img {
+	margin: 30px 0 20px 0;
+}
+.recommend-hd:hover {
+	background-color: #b8bddd;
+}
+.recommend-bd {
+	float: left;
+	padding-left: 10px;
+	height: 163px;
+	width: 990px;
+	background-color: #ebebeb;
+}
+	/*图片添加过渡*/
+.recommend-bd img {
+	overflow: hidden;
+	transition: all .3s;
+}
+.recommend-bd img:hover {
+	margin-top: -10px;
+}
+.recommend-bd li {
+	float: left;
+	margin: 10px 0;
+	border-right: 1px solid #ccc;
+}
+.recommend-bd .last {
+	border-right: 0;
+}
+
+/*-----------floor楼层区-----------*/
+.box-hd {
+	height: 30px;
+	border-bottom: 2px solid #c81623;
+	margin-top: 5px;
+}
+.box-hd h3 {
+	float: left;
+	padding-left: 10px;
+	font-size: 18px;
+	color: #c81623;
+}
+.tab-list {
+	float: right;
+	line-height: 30px;
+}
+.tab-list li {
+	float: left;
+}
+.tab-list li a{
+	margin: 0 15px;
+}
+.box-bd {
+	height: 360px;
+}
+	/*添加过渡动画*/
+.box-bd img {
+	transition: all .5s;
+}
+.box-bd img:hover {
+	margin-left: 10px;
+}
+.w209 {
+	width: 209px;
+}
+.w329 {
+	width: 329px;
+}
+.w218 {
+	width: 218px;
+}
+.tab-content>li {
+		/*图片比盒子大，边框显示不处理来---超出部分隐藏*/
+	overflow: hidden;
+	float: left;
+	height: 360px;
+	border-right: 1px solid #ccc;
+	background-color: #f9f9f9;
+}
+.tab-content>li .tab-small {
+	border-bottom: 1px solid #ccc;
+}
+.tab-content-list {
+	margin: 10px;
+}
+.tab-content-list li {
+	float: left;
+	width: 86px;
+	height: 32px;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+}
+/*固定侧边栏fixedtool*/
+.fixedtool {
+	position: absolute;
+	top: 600px;
+	transform: translateY(-50%);
+	left: 50%;
+	margin-left: -676px;
+	width: 66px;
+	background-color: #ebebeb;
+}
+.fixedtool li {
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	transition: all .3s;
+}
+.fixedtool .goback {
+	display: none;
+	height: 66px;
+	font-size: 14px;
+	background-color: #b1191a;
+	color: #fff;
+	text-align: center;
+	line-height: 66px;
+}
+.fixedtool li:hover {
+	margin-left: 5px;
+	background-color: #c81623;
+	color: #fff;
+}

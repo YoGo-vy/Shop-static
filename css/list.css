@@ -1,0 +1,136 @@
+/*列表样式*/
+
+/*nav样式*/
+.sk-list li{
+	float: left;
+	line-height: 45px;
+	margin: 0 30px;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+}
+.sk-list li a:hover {
+	color: #c81523;
+}
+.sk-con li {
+	float: left;
+	line-height: 45px;
+	margin: 0 20px;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: "icomoon";
+}
+/*container*/
+.container {
+	margin-top: 5px;
+}
+.sk_bd {
+	width: 1212px;
+	margin-top: 10px;
+}
+.sk_goods {
+	overflow: hidden;
+	float: left;
+	position: relative;
+	width: 288px;
+	height: 458px;	
+		/*透明的边框---防止鼠标悬停添加边框盒子移动*/
+	border: 1px solid transparent;
+	margin: 0 12px 15px 0;
+	text-align: center;
+}
+.sk_goods img {
+	transition: all .3s;
+}
+.sk_goods img:hover {
+	margin-right: -60px;
+}
+.sk_goods:hover {
+	border: 1px solid #e12228;
+}
+.sk_goods_title {
+	font-size: 14px;
+	color: #666;
+	font-weight: normal;
+	padding: 1 10px;
+}
+.sk_goods_price del {
+	font-size: 14px;
+	color: #a4a4a4;
+}
+.sk_goods_price em {
+	font-size: 22px;
+	color: #e60012;
+}
+.sk_goods_progress {
+	padding: 10px;
+}
+.sk_goods_progress em,
+.sk_goods_progress i {
+	color: #f24349;
+}
+.sk_goods_progress .bar{
+	display: inline-block;
+	width: 80px;
+	height: 10px;
+	border: 1px solid #b1191a;
+		/*行内款元素和文字中间线对齐*/
+	vertical-align: middle;
+	border-radius: 5px;
+
+}
+.sk_goods_progress .bar_in {
+	width: 87%;
+	height: 10px;
+	background-color: #f24349;
+}
+.sk_goods_buy {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #b1191a;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+/* 分页工具page*/
+.page {
+	margin: 40px 0;
+		/*行内元素，行内块元素可以居中对齐*/
+	text-align: center;
+}
+.page_num a {
+			/*让分页条内的超链接，input输入框 button都是行内块，方便居中布局*/
+	display: inline-block;
+	padding: 0 16px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
+.page_num .current,
+.page_num .dotted {
+		/*不要去掉边框，让边框变成透明----防止盒子大小改变影响布局*/
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+.page_skip input {
+	width: 46px;
+	height: 36px;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+.page_skip input:focus {
+	width: 88px;
+	border: 1px solid skyblue;
+}
+.page_skip button {
+	width: 54px;
+	height: 36px;
+	border: 1px solid #ccc;
+	background-color: #f7f7f7;
+}
